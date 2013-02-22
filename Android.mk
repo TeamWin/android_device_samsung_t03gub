@@ -1,3 +1,3 @@
-ifneq ($(filter t03gduoszn,$(TARGET_DEVICE)),)
+ifneq ($(filter t03gub,$(TARGET_DEVICE)),)
     include $(all-subdir-makefiles)
 endif

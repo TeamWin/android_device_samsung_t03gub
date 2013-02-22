@@ -1,7 +1,7 @@
 USE_CAMERA_STUB := true
 
 # inherit from the proprietary version
--include vendor/samsung/t03gduoszn/BoardConfigVendor.mk
+-include vendor/samsung/t03gub/BoardConfigVendor.mk
 
 TARGET_NO_BOOTLOADER := true
 TARGET_BOOTLOADER_BOARD_NAME := smdk4x12
@@ -33,7 +33,7 @@ TARGET_SOC := exynos4210
 TARGET_HAL_PATH := hardware/samsung/exynos4/hal
 TARGET_ARCH := arm
 
-BOARD_KERNEL_CMDLINE :=  console=ttyHSL0,115200,n8 androidboot.hardware=jet
+#BOARD_KERNEL_CMDLINE :=
 BOARD_KERNEL_BASE :=  0x10000000
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x11000000
 BOARD_KERNEL_PAGESIZE := 2048
@@ -45,7 +45,7 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 0x105c0000
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 0x105c0000
 BOARD_FLASH_BLOCK_SIZE := 131072
 
-TARGET_PREBUILT_KERNEL := device/samsung/t03gduoszn/kernAl
+TARGET_PREBUILT_KERNEL := device/samsung/t03gub/kernAl
 
 # Recovery:Start
 
@@ -54,7 +54,8 @@ BOARD_HAS_LARGE_FILESYSTEM := true
 
 # Recovery: set depending on recovery being built for. (CWM or TWRP)
 #           both init scripts can be found in the recovery folder
-TARGET_RECOVERY_INITRC := device/samsung/t03gduoszn/recovery/init.rc
+TARGET_RECOVERY_INITRC := device/samsung/t03gub/recovery/root/init.rc
+TARGET_PREBUILT_RECOVERY_KERNEL := device/samsung/t03gub/recovery/kernAl
 
 # TWRP specific build flags
 BOARD_USE_CUSTOM_RECOVERY_FONT:= \"roboto_15x24.h\"
