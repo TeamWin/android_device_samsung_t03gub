@@ -21,8 +21,8 @@ ro.build.host=SEP-91
 ro.build.tags=release-keys
 ro.product.model=GT-N7100
 ro.product.brand=samsung
-ro.product.name=t03gxx
-ro.product.device=t03g
+ro.product.name=t03gubxx
+ro.product.device=t03gub
 ro.product.board=smdk4x12
 ro.product.cpu.abi=armeabi-v7a
 ro.product.cpu.abi2=armeabi
@@ -33,10 +33,10 @@ ro.product.locale.region=GB
 ro.wifi.channels=
 ro.board.platform=exynos4
 # ro.build.product is obsolete; use ro.product.device
-ro.build.product=t03g
+ro.build.product=t03gub
 # Do not try to parse ro.build.description or .fingerprint
-ro.build.description=t03gxx-user 4.1.1 JRO03C N7100XXALI3 release-keys
-ro.build.fingerprint=samsung/t03gxx/t03g:4.1.1/JRO03C/N7100XXALI3:user/release-keys
+ro.build.description=t03gubxx-user 4.1.1 JRO03C N7100XXALI3 release-keys
+ro.build.fingerprint=samsung/t03gubxx/t03g:4.1.1/JRO03C/N7100XXALI3:user/release-keys
 ro.build.characteristics=default
 # Samsung Specific Properties
 ro.build.PDA=N7100XXALI3
